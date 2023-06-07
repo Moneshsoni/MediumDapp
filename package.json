@@ -1,0 +1,29 @@
+{
+  "name": "medium",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Moneshsoni/MediumDapp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Moneshsoni/MediumDapp/issues"
+  },
+  "homepage": "https://github.com/Moneshsoni/MediumDapp#readme",
+  "dependencies": {
+    "@openzeppelin/contracts-upgradeable": "^4.9.1",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.14.1"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+    "@nomiclabs/hardhat-waffle": "^2.0.6",
+    "@openzeppelin/hardhat-upgrades": "^1.27.0"
+  }
+}
