@@ -1,0 +1,184 @@
+{
+  "manifestVersion": "3.2",
+  "proxies": [
+    {
+      "address": "0xfaa0c3d63394f1FBfBc4371547d8755dabA6F157",
+      "txHash": "0xd89effe30573b69b1f8087322c3f946f784ea803c7ce5e8708babc22496c1517",
+      "kind": "uups"
+    }
+  ],
+  "impls": {
+    "b8f4ddbf944253f7c3c3f35b53fdede3e574d2f35231fe0f17d728f29346af99": {
+      "address": "0x508B35fBa25Da3B706Fd5F4A715596122f7F5831",
+      "txHash": "0x6da9684ae922262868b4457fe30f8650a44fb1cb14557b9c901070f307cc7ffe",
+      "layout": {
+        "solcVersion": "0.8.9",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:63",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:68"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ERC1967UpgradeUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:169"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "UUPSUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:111"
+          },
+          {
+            "label": "owner",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_address_payable",
+            "contract": "Medium",
+            "src": "contracts/Medium.sol:8"
+          },
+          {
+            "label": "number_of_article",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_uint256",
+            "contract": "Medium",
+            "src": "contracts/Medium.sol:9"
+          },
+          {
+            "label": "users",
+            "offset": 0,
+            "slot": "103",
+            "type": "t_mapping(t_address,t_struct(User)1130_storage)",
+            "contract": "Medium",
+            "src": "contracts/Medium.sol:27"
+          },
+          {
+            "label": "articles",
+            "offset": 0,
+            "slot": "104",
+            "type": "t_array(t_struct(Article)1139_storage)dyn_storage",
+            "contract": "Medium",
+            "src": "contracts/Medium.sol:29"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_address_payable": {
+            "label": "address payable",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_struct(Article)1139_storage)dyn_storage": {
+            "label": "struct Medium.Article[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_struct(User)1130_storage)": {
+            "label": "mapping(address => struct Medium.User)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Article)1139_storage": {
+            "label": "struct Medium.Article",
+            "members": [
+              {
+                "label": "title",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "Author_name",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "tags",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "Description",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "3"
+              }
+            ],
+            "numberOfBytes": "128"
+          },
+          "t_struct(User)1130_storage": {
+            "label": "struct Medium.User",
+            "members": [
+              {
+                "label": "name",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "city",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "profession",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "isAdded",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "3"
+              }
+            ],
+            "numberOfBytes": "128"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    }
+  }
+}
